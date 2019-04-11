@@ -1,0 +1,28 @@
+{
+  "name": "unit_testing_with_coverage",
+  "version": "1.0.1",
+  "description": "practice",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha test",
+    "coverage": "istanbul cover _mocha test -x *.test.js",
+    "showcoverage": "open coverage/lcov-report/index.html"
+  },
+  "author": "rajesh",
+  "license": "ISC",
+  "dependencies": {
+    "unit.js": "^2.1.0"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "mocha": "^6.1.2",
+    "nyc": "^13.3.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  }
+}
