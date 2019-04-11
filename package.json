@@ -4,6 +4,7 @@
   "description": "practice",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "mocha test",
     "coverage": "istanbul cover _mocha test -x *.test.js",
     "showcoverage": "open coverage/lcov-report/index.html"
