@@ -1,4 +1,4 @@
-const multiplication = require('../src/multiply')
+const index = require('../src/index')
 
 describe('multiplication', function () {
     // describes a module with nested "describe" functions
@@ -6,17 +6,17 @@ describe('multiplication', function () {
         // specify the expected behavior
         it('should multiply 2 numbers', function () {
             var a = 59, b = 37;
-            multiplication.multiply(a, b)
+            index.multiplication.multiply(a, b)
                 .then(function (res) {
                     console.log(a + ' x ' + b + ' =', res)
                 })
             var a = '', b = 37;
-            multiplication.multiply(a, b)
+            index.multiplication.multiply(a, b)
                 .then(function (res) {
                     console.log(a + ' x ' + b + ' =', res)
                 })
 
-            multiplication.multiply()
+            index.multiplication.multiply()
                 .then(function (res) {
                     console.log(a + ' x ' + b + ' =', res)
                 })

@@ -1,4 +1,4 @@
-const addition = require('../src/sum')
+const index = require('../src/index')
 
 describe('addition', function () {
     // describes a module with nested "describe" functions
@@ -6,13 +6,13 @@ describe('addition', function () {
         // specify the expected behavior
         it('should add 2 numbers', function () {
             var a = 27, b = 16;
-            addition.add(a, b)
+            index.addition.add(a, b)
                 .then(function (res) {
                     console.log(a + ' + ' + b + ' =', res)
                 })
 
             var a = 'a', b = 6;
-            addition.add(a, b)
+            index.addition.add(a, b)
                 .then(function (res) {
                     console.log(a + ' + ' + b + ' =', res)
                 })
@@ -20,7 +20,7 @@ describe('addition', function () {
                     console.log('error', err)
                 })
 
-            addition.add()
+            index.addition.add()
                 .then(function (res) {
                     console.log(a + ' + ' + b + ' =', res)
                 })
