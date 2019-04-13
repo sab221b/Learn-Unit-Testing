@@ -10,8 +10,8 @@ module.exports = {
             if (isNaN(a) || isNaN(b))
                 reject(new Error('2 numbers are required'));
             else {
-                const quotient = a * b;
-                resolve(quotient);
+                const product = a * b;
+                resolve(product);
             }
         })
     }

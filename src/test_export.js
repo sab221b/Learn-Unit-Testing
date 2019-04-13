@@ -1,6 +1,6 @@
 const { addition, subtraction, multiplication, division } = require('./index');
 
-addition.add(5)
+addition.add(54, 46)
     .then(function (res) {
         console.log(res)
     })

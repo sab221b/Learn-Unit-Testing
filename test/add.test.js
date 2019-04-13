@@ -14,7 +14,7 @@ describe('addition', function () {
             var a = 'a', b = 6;
             index.addition.add(a, b)
                 .then(function (res) {
-                    console.log(a + ' + ' + b + ' =', res)
+                    console.log(a + ' + ' + b + ' =', res) 
                 })
                 .catch(function(err) {
                     console.log('error', err)
